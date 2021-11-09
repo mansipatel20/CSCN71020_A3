@@ -25,11 +25,22 @@ namespace UnitTestAssignment3
 		TEST_METHOD(Draw_Result_Test)
 		{
 			//Declaring variables
-			char userOne_input[50] = "Rock";
-			char userTwo_input[50] = "Rock";
+			char userOne_input[50] = "Scissors";
+			char userTwo_input[50] = "Scissors";
 			char output_function[10] = {};
 
 			Assert::AreEqual("Draw", testResult(userOne_input, userTwo_input));
 		}
+
+		TEST_METHOD(Player1_Win_Result_Test)
+		{
+			//Declaring variables
+			char userOne_input[50] = "Rock";
+			char userTwo_input[50] = "Paper";
+			char output_function[10] = {};
+
+			Assert::AreEqual("Player1", testResult(userOne_input, userTwo_input));
+		}
+
 	};
 }
