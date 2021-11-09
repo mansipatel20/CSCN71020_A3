@@ -39,7 +39,7 @@ namespace UnitTestAssignment3
 			char userTwo_input[50] = "Paper";
 			char output_function[10] = {};
 
-			Assert::AreEqual("Player1", testResult(userOne_input, userTwo_input));
+			Assert::AreEqual("Player2", testResult(userOne_input, userTwo_input));
 		}
 
 	};
