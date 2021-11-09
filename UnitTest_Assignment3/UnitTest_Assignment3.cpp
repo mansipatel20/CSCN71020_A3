@@ -26,7 +26,7 @@ namespace UnitTestAssignment3
 		{
 			//Declaring variables
 			char userOne_input[50] = "Rock";
-			char userTwo_input[50] = "Paper";
+			char userTwo_input[50] = "Rock";
 			char output_function[10] = {};
 
 			Assert::AreEqual("Draw", testResult(userOne_input, userTwo_input));
